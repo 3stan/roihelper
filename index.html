@@ -1,21 +1,47 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Starter Template for Bootstrap</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <title>Rise of Industry Helper</title>
+    <link href="css/index.css" rel="stylesheet">
+
+    <script src="script/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="script/bootstrap3-typeahead.min.js"></script>
+    <script src="script/index.js"></script>
   </head>
+
   <body>
-    <nav>
-        <ul>
-            <li><a href="/">Building Planner</a></li>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">RoI Helper</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Building Planner Helper <span class="sr-only">(current)</span></a>
+          </li>
         </ul>
+      </div>
     </nav>
-    <div class="container">
-        <div class="blurb">
-            <h1>Initial commit</h1>
-        </div><!-- /.blurb -->
-    </div><!-- /.container -->
-    <footer>
-    </footer>
+
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-sm">
+          <input type="text" id="item-field" data-provide="typeahead" placeholder="Search for Item">
+        </div>
+      </div><!-- /.row -->
+    </main><!-- /.container -->
   </body>
 </html>
+
