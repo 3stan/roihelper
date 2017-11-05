@@ -34,7 +34,7 @@ $(document).ready(function() {
   helper.setup(helper).then(result => {
     console.log(result)
     $("#title").text("Loaded!")
-    setTimeout(function () {$("#title").remove()}, 1000)
+    setTimeout(function () {$("#title-div").remove()}, 1000)
   }, error => {
     console.log(error)
   })
