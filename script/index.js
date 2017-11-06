@@ -1,9 +1,31 @@
+String.prototype.toProperCase = function () {
+    return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+};
+
 class BuildingHelper {
   constructor(self) {
     this.buildings = {}
     this.items = {}
 
-    this.selected = []
+    this.demanded = {}
+    this.demandedListDiv = $("#demand-list")
+
+    this.requiredRawResources = {}
+  }
+
+  prettifyName(input) {
+    return input.replace("_", " ").toProperCase()
+  }
+
+  getNames(helper) {
+    var answer = []
+    $(Object.keys(helper.items)).each(function(name, value) {
+      answer.push({
+        "id": value,
+        "name": helper.prettifyName(value)
+      })
+    })
+    return answer
   }
 
   setup(helper) {
@@ -17,7 +39,16 @@ class BuildingHelper {
         $(data).each(function(name, value) {
           helper.items[value.name] = value.req
         })  
-        $("#item-field").typeahead({ source:Object.keys(helper.items) })
+        var typeaheadInput = $("#item-field")
+        typeaheadInput.typeahead({ 
+          source: helper.getNames(helper),
+          updater: function(item) {
+            helper.onDemandedItemAdd(helper, item)
+          },
+          fitToElement:true,
+          items:5,
+          autoSelect:false,
+        })
       })
 
       if (true) {
@@ -27,6 +58,43 @@ class BuildingHelper {
       }
     })
   }  
+
+  addNewDemandedItem(helper, item) {
+    helper.demandedListDiv.append(
+      $('<tr>').attr('id', 'demanded-' + item.id).append(
+        [
+          $('<td>').attr('class', 'demanded-name').append(item.name),
+          $('<td>').attr('class', 'demanded-quantity').append(1)
+        ]
+    ));  
+  }
+
+  updateExistingDemandedItem(helper, item) {
+    $("#demanded-" + item.id).find(".demanded-quantity").html(helper.demanded[item.id])
+  }
+
+  onDemandedItemAdd(helper, item) {
+    if($("#demanded-" + item.id).length == 0) {
+      helper.demanded[item.id] = 1
+      helper.addNewDemandedItem(helper, item)
+    } else {
+      helper.demanded[item.id] = helper.demanded[item.id] + 1
+      helper.updateExistingDemandedItem(helper, item)
+    }
+
+    helper.reduceToRaw(helper, item)
+  }
+
+  reduceToRaw(helper, item) {
+    var itemToAdd = item.id
+    var rawRequired = {}
+    var reducing = [{"id": itemToAdd, "quantity": 1}]
+
+    //while(reducing.length > 0) {
+      var curr = reducing.pop()
+      console.log(helper.items[curr.id])
+    //}
+  }
 }
 
 $(document).ready(function() {

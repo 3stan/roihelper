@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Rise of Industry Helper</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="css/index.css" rel="stylesheet">
@@ -29,7 +29,7 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Building Planner Helper <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Building Planner Helper<span class="sr-only">(current)</span></a>
           </li>
         </ul>
       </div>
@@ -40,12 +40,32 @@
         <h1 id="title">Loading...</h1>
       </div>
       <div class="row">
+        <input type="text" class="form-control" id="item-field" data-provide="typeahead" placeholder="Search for Item">
+      </div>
+      <div class="row">
         <div class="col-sm">
-          <input type="text" id="item-field" data-provide="typeahead" placeholder="Search for Item">
-          <ul class="list-group" id="demand-list">
-          </ul>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Demanded Item</th>
+                <th scope="col">Quantity</th>
+              </tr>
+            </thead>
+            <tbody id="demand-list">
+            </tbody>
+          </table>
         </div>
         <div class="col-sm">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Required Raw Resource</th>
+                <th scope="col">Quantity</th>
+              </tr>
+            </thead>
+            <tbody id="demand-list">
+            </tbody>
+          </table>
         </div>
       </div><!-- /.row -->
     </main><!-- /.container -->
