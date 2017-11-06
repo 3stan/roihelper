@@ -3,968 +3,968 @@
     "req":[
 
     ],
-    "id":"coal"
+    "id":"Coal"
   },
   {
     "req":[
 
     ],
-    "id":"fish"
+    "id":"Fish"
   },
   {
     "req":[
 
     ],
-    "id":"gas"
+    "id":"Gas"
   },
   {
     "req":[
 
     ],
-    "id":"iron_ore"
+    "id":"Iron ore"
   },
   {
     "req":[
 
     ],
-    "id":"oil"
+    "id":"Oil"
   },
   {
     "req":[
 
     ],
-    "id":"sand"
+    "id":"Sand"
   },
   {
     "req":[
 
     ],
-    "id":"water"
+    "id":"Water"
   },
   {
     "req":[
 
     ],
-    "id":"wood"
+    "id":"Wood"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       }
     ],
-    "id":"apples"
+    "id":"Apples"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       }
     ],
-    "id":"cocoa"
+    "id":"Cocoa"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       }
     ],
-    "id":"cotton"
+    "id":"Cotton"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       }
     ],
-    "id":"grapes"
+    "id":"Grapes"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       }
     ],
-    "id":"hops"
+    "id":"Hops"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       }
     ],
-    "id":"oranges"
+    "id":"Oranges"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       }
     ],
-    "id":"sugar"
+    "id":"Sugar"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       }
     ],
-    "id":"vegetables"
+    "id":"Vegetables"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       }
     ],
-    "id":"wheat"
+    "id":"Wheat"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       }
     ],
-    "id":"berries"
+    "id":"Berries"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       },
       {
-        "id":"wheat",
+        "id":"Wheat",
         "quantity":1
       }
     ],
-    "id":"eggs"
+    "id":"Eggs"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       },
       {
-        "id":"wheat",
+        "id":"Wheat",
         "quantity":1
       }
     ],
-    "id":"meat"
+    "id":"Meat"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       },
       {
-        "id":"wheat",
+        "id":"Wheat",
         "quantity":1
       }
     ],
-    "id":"leather"
+    "id":"Leather"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       },
       {
-        "id":"wheat",
+        "id":"Wheat",
         "quantity":1
       }
     ],
-    "id":"milk"
+    "id":"Milk"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       },
       {
-        "id":"wheat",
+        "id":"Wheat",
         "quantity":1
       }
     ],
-    "id":"wool"
+    "id":"Wool"
   },
   {
     "req":[
       {
-        "id":"wooden_barrels",
+        "id":"Wooden barrels",
         "quantity":1
       },
       {
-        "id":"grapes",
+        "id":"Grapes",
         "quantity":2
       }
     ],
-    "id":"wine"
+    "id":"Wine"
   },
   {
     "req":[
       {
-        "id":"bottles",
+        "id":"Bottles",
         "quantity":1
       },
       {
-        "id":"grapes",
+        "id":"Grapes",
         "quantity":3
       }
     ],
-    "id":"brandy"
+    "id":"Brandy"
   },
   {
     "req":[
       {
-        "id":"hops",
+        "id":"Hops",
         "quantity":2
       },
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       },
       {
-        "id":"wooden_barrels",
+        "id":"Wooden barrels",
         "quantity":1
       }
     ],
-    "id":"beer"
+    "id":"Beer"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       },
       {
-        "id":"bottles",
+        "id":"Bottles",
         "quantity":1
       },
       {
-        "id":"wheat",
+        "id":"Wheat",
         "quantity":2
       }
     ],
-    "id":"barley_whiskey"
+    "id":"Barley whiskey"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       },
       {
-        "id":"bottles",
+        "id":"Bottles",
         "quantity":1
       },
       {
-        "id":"apples",
+        "id":"Apples",
         "quantity":2
       }
     ],
-    "id":"cider"
+    "id":"Cider"
   },
   {
     "req":[
       {
-        "id":"cocoa",
+        "id":"Cocoa",
         "quantity":2
       },
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       },
       {
-        "id":"bottles",
+        "id":"Bottles",
         "quantity":1
       }
     ],
-    "id":"chocolate_liquor"
+    "id":"Chocolate liquor"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       },
       {
-        "id":"milk",
+        "id":"Milk",
         "quantity":1
       }
     ],
-    "id":"cheese"
+    "id":"Cheese"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       },
       {
-        "id":"wheat",
+        "id":"Wheat",
         "quantity":2
       }
     ],
-    "id":"dough"
+    "id":"Dough"
   },
   {
     "req":[
       {
-        "id":"dough",
+        "id":"Dough",
         "quantity":1
       },
       {
-        "id":"apples",
+        "id":"Apples",
         "quantity":1
       }
     ],
-    "id":"apple_pie"
+    "id":"Apple pie"
   },
   {
     "req":[
       {
-        "id":"cocoa",
+        "id":"Cocoa",
         "quantity":1
       },
       {
-        "id":"eggs",
+        "id":"Eggs",
         "quantity":1
       },
       {
-        "id":"wheat",
+        "id":"Wheat",
         "quantity":1
       }
     ],
-    "id":"chocolate_cake"
+    "id":"Chocolate cake"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       },
       {
-        "id":"cartons",
+        "id":"Cartons",
         "quantity":1
       },
       {
-        "id":"oranges",
+        "id":"Oranges",
         "quantity":2
       }
     ],
-    "id":"orange_juice"
+    "id":"Orange juice"
   },
   {
     "req":[
       {
-        "id":"cartons",
+        "id":"Cartons",
         "quantity":1
       },
       {
-        "id":"apples",
+        "id":"Apples",
         "quantity":1
       },
       {
-        "id":"milk",
+        "id":"Milk",
         "quantity":1
       }
     ],
-    "id":"apple_smoothie"
+    "id":"Apple smoothie"
   },
   {
     "req":[
       {
-        "id":"cocoa",
+        "id":"Cocoa",
         "quantity":1
       },
       {
-        "id":"milk",
+        "id":"Milk",
         "quantity":1
       }
     ],
-    "id":"chocolate_bar"
+    "id":"Chocolate bar"
   },
   {
     "req":[
       {
-        "id":"cheese",
+        "id":"Cheese",
         "quantity":1
       },
       {
-        "id":"vegetables",
+        "id":"Vegetables",
         "quantity":1
       },
       {
-        "id":"wheat",
+        "id":"Wheat",
         "quantity":1
       }
     ],
-    "id":"pizza"
+    "id":"Pizza"
   },
   {
     "req":[
       {
-        "id":"vegetables",
+        "id":"Vegetables",
         "quantity":1
       },
       {
-        "id":"dough",
+        "id":"Dough",
         "quantity":1
       },
       {
-        "id":"meat",
+        "id":"Meat",
         "quantity":1
       }
     ],
-    "id":"burgers"
+    "id":"Burgers"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       },
       {
-        "id":"vegetables",
+        "id":"Vegetables",
         "quantity":1
       },
       {
-        "id":"cans",
+        "id":"Cans",
         "quantity":1
       }
     ],
-    "id":"soup"
+    "id":"Soup"
   },
   {
     "req":[
       {
-        "id":"fish",
+        "id":"Fish",
         "quantity":1
       },
       {
-        "id":"cans",
+        "id":"Cans",
         "quantity":1
       }
     ],
-    "id":"canned_fish"
+    "id":"Canned fish"
   },
   {
     "req":[
       {
-        "id":"meat",
+        "id":"Meat",
         "quantity":1
       },
       {
-        "id":"cans",
+        "id":"Cans",
         "quantity":1
       }
     ],
-    "id":"corned_meat"
+    "id":"Corned meat"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       },
       {
-        "id":"sugar",
+        "id":"Sugar",
         "quantity":2
       }
     ],
-    "id":"soda_water"
+    "id":"Soda water"
   },
   {
     "req":[
       {
-        "id":"bottles",
+        "id":"Bottles",
         "quantity":1
       },
       {
-        "id":"soda_water",
+        "id":"Soda water",
         "quantity":1
       },
       {
-        "id":"oranges",
+        "id":"Oranges",
         "quantity":1
       }
     ],
-    "id":"orange_soda"
+    "id":"Orange soda"
   },
   {
     "req":[
       {
-        "id":"apples",
+        "id":"Apples",
         "quantity":2
       },
       {
-        "id":"sugar",
+        "id":"Sugar",
         "quantity":1
       }
     ],
-    "id":"candied_apples"
+    "id":"Candied apples"
   },
   {
     "req":[
       {
-        "id":"oranges",
+        "id":"Oranges",
         "quantity":2
       },
       {
-        "id":"sugar",
+        "id":"Sugar",
         "quantity":1
       }
     ],
-    "id":"orange_marmalade"
+    "id":"Orange marmalade"
   },
   {
     "req":[
       {
-        "id":"oil",
+        "id":"Oil",
         "quantity":2
       },
       {
-        "id":"gas",
+        "id":"Gas",
         "quantity":1
       }
     ],
-    "id":"rubber"
+    "id":"Rubber"
   },
   {
     "req":[
       {
-        "id":"oil",
+        "id":"Oil",
         "quantity":1
       },
       {
-        "id":"gas",
+        "id":"Gas",
         "quantity":2
       }
     ],
-    "id":"plastics"
+    "id":"Plastics"
   },
   {
     "req":[
       {
-        "id":"sand",
+        "id":"Sand",
         "quantity":1
       },
       {
-        "id":"oil",
+        "id":"Oil",
         "quantity":1
       }
     ],
-    "id":"chemicals"
+    "id":"Chemicals"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       },
       {
-        "id":"dye",
+        "id":"Dye",
         "quantity":1
       },
       {
-        "id":"cans",
+        "id":"Cans",
         "quantity":1
       }
     ],
-    "id":"paints"
+    "id":"Paints"
   },
   {
     "req":[
       {
-        "id":"steel_barrels",
+        "id":"Steel barrels",
         "quantity":1
       },
       {
-        "id":"oil",
+        "id":"Oil",
         "quantity":2
       }
     ],
-    "id":"refined_oil"
+    "id":"Refined oil"
   },
   {
     "req":[
       {
-        "id":"sand",
+        "id":"Sand",
         "quantity":3
       }
     ],
-    "id":"glass"
+    "id":"Glass"
   },
   {
     "req":[
       {
-        "id":"glass",
+        "id":"Glass",
         "quantity":2
       }
     ],
-    "id":"bottles"
+    "id":"Bottles"
   },
   {
     "req":[
       {
-        "id":"coal",
+        "id":"Coal",
         "quantity":1
       },
       {
-        "id":"iron_ore",
+        "id":"Iron ore",
         "quantity":2
       }
     ],
-    "id":"steel"
+    "id":"Steel"
   },
   {
     "req":[
       {
-        "id":"steel",
+        "id":"Steel",
         "quantity":1
       }
     ],
-    "id":"cans"
+    "id":"Cans"
   },
   {
     "req":[
       {
-        "id":"glass",
+        "id":"Glass",
         "quantity":2
       }
     ],
-    "id":"glassware"
+    "id":"Glassware"
   },
   {
     "req":[
       {
-        "id":"steel",
+        "id":"Steel",
         "quantity":1
       }
     ],
-    "id":"cutlery"
+    "id":"Cutlery"
   },
   {
     "req":[
       {
-        "id":"steel",
+        "id":"Steel",
         "quantity":2
       }
     ],
-    "id":"steel_barrels"
+    "id":"Steel barrels"
   },
   {
     "req":[
       {
-        "id":"dye",
+        "id":"Dye",
         "quantity":1
       },
       {
-        "id":"cotton",
+        "id":"Cotton",
         "quantity":1
       }
     ],
-    "id":"fabric"
+    "id":"Fabric"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":1
       },
       {
-        "id":"berries",
+        "id":"Berries",
         "quantity":1
       }
     ],
-    "id":"dye"
+    "id":"Dye"
   },
   {
     "req":[
       {
-        "id":"fabric",
+        "id":"Fabric",
         "quantity":1
       }
     ],
-    "id":"summer_clothes"
+    "id":"Summer clothes"
   },
   {
     "req":[
       {
-        "id":"wool",
+        "id":"Wool",
         "quantity":1
       },
       {
-        "id":"fabric",
+        "id":"Fabric",
         "quantity":1
       }
     ],
-    "id":"winter_clothes"
+    "id":"Winter clothes"
   },
   {
     "req":[
       {
-        "id":"leather",
+        "id":"Leather",
         "quantity":1
       },
       {
-        "id":"fabric",
+        "id":"Fabric",
         "quantity":1
       }
     ],
-    "id":"work_clothes"
+    "id":"Work clothes"
   },
   {
     "req":[
       {
-        "id":"leather",
+        "id":"Leather",
         "quantity":1
       },
       {
-        "id":"fabric",
+        "id":"Fabric",
         "quantity":1
       }
     ],
-    "id":"handbags"
+    "id":"Handbags"
   },
   {
     "req":[
       {
-        "id":"steel",
+        "id":"Steel",
         "quantity":1
       },
       {
-        "id":"fabric",
+        "id":"Fabric",
         "quantity":2
       }
     ],
-    "id":"mattress"
+    "id":"Mattress"
   },
   {
     "req":[
       {
-        "id":"rubber",
+        "id":"Rubber",
         "quantity":1
       },
       {
-        "id":"fabric",
+        "id":"Fabric",
         "quantity":1
       }
     ],
-    "id":"outdoor_clothes"
+    "id":"Outdoor clothes"
   },
   {
     "req":[
       {
-        "id":"wood",
+        "id":"Wood",
         "quantity":2
       }
     ],
-    "id":"furniture_base"
+    "id":"Furniture base"
   },
   {
     "req":[
       {
-        "id":"furniture_base",
+        "id":"Furniture base",
         "quantity":1
       },
       {
-        "id":"leather",
+        "id":"Leather",
         "quantity":2
       }
     ],
-    "id":"leather_furniture"
+    "id":"Leather furniture"
   },
   {
     "req":[
       {
-        "id":"furniture_base",
+        "id":"Furniture base",
         "quantity":1
       },
       {
-        "id":"steel",
+        "id":"Steel",
         "quantity":2
       }
     ],
-    "id":"office_furniture"
+    "id":"Office furniture"
   },
   {
     "req":[
       {
-        "id":"furniture_base",
+        "id":"Furniture base",
         "quantity":1
       },
       {
-        "id":"glass",
+        "id":"Glass",
         "quantity":2
       }
     ],
-    "id":"glass_furniture"
+    "id":"Glass furniture"
   },
   {
     "req":[
       {
-        "id":"steel",
+        "id":"Steel",
         "quantity":1
       },
       {
-        "id":"wood",
+        "id":"Wood",
         "quantity":1
       }
     ],
-    "id":"wooden_barrels"
+    "id":"Wooden barrels"
   },
   {
     "req":[
       {
-        "id":"furniture_base",
+        "id":"Furniture base",
         "quantity":1
       },
       {
-        "id":"plastics",
+        "id":"Plastics",
         "quantity":1
       }
     ],
-    "id":"plastic_furniture"
+    "id":"Plastic furniture"
   },
   {
     "req":[
       {
-        "id":"furniture_base",
+        "id":"Furniture base",
         "quantity":1
       },
       {
-        "id":"mattress",
+        "id":"Mattress",
         "quantity":1
       }
     ],
-    "id":"fancy_beds"
+    "id":"Fancy beds"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":2
       },
       {
-        "id":"wood",
+        "id":"Wood",
         "quantity":1
       }
     ],
-    "id":"paper"
+    "id":"Paper"
   },
   {
     "req":[
       {
-        "id":"paper",
+        "id":"Paper",
         "quantity":1
       },
       {
-        "id":"fabric",
+        "id":"Fabric",
         "quantity":1
       },
       {
-        "id":"cardboard",
+        "id":"Cardboard",
         "quantity":1
       }
     ],
-    "id":"books"
+    "id":"Books"
   },
   {
     "req":[
       {
-        "id":"dye",
+        "id":"Dye",
         "quantity":1
       },
       {
-        "id":"paper",
+        "id":"Paper",
         "quantity":2
       }
     ],
-    "id":"newspapers"
+    "id":"Newspapers"
   },
   {
     "req":[
       {
-        "id":"dye",
+        "id":"Dye",
         "quantity":1
       },
       {
-        "id":"paper",
+        "id":"Paper",
         "quantity":2
       }
     ],
-    "id":"posters"
+    "id":"Posters"
   },
   {
     "req":[
       {
-        "id":"water",
+        "id":"Water",
         "quantity":2
       },
       {
-        "id":"wood",
+        "id":"Wood",
         "quantity":1
       }
     ],
-    "id":"cardboard"
+    "id":"Cardboard"
   },
   {
     "req":[
       {
-        "id":"paper",
+        "id":"Paper",
         "quantity":1
       },
       {
-        "id":"dye",
+        "id":"Dye",
         "quantity":1
       },
       {
-        "id":"cardboard",
+        "id":"Cardboard",
         "quantity":1
       }
     ],
-    "id":"gift_wrapping"
+    "id":"Gift wrapping"
   },
   {
     "req":[
       {
-        "id":"cardboard",
+        "id":"Cardboard",
         "quantity":1
       }
     ],
-    "id":"cartons"
+    "id":"Cartons"
   },
   {
     "req":[
       {
-        "id":"leather",
+        "id":"Leather",
         "quantity":1
       },
       {
-        "id":"wood",
+        "id":"Wood",
         "quantity":1
       },
       {
-        "id":"paper",
+        "id":"Paper",
         "quantity":2
       }
     ],
-    "id":"deluxe_books"
+    "id":"Deluxe books"
   }
 ]
