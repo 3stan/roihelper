@@ -12,7 +12,7 @@ Sources:
 * ["Official" Google Spreadsheet](https://docs.google.com/spreadsheets/d/1d--4EFCvWRlK7t-P6cpwiwoG1kpP8ZQc2j4XVbCL-Uw/edit#gid=899845175) that the RoI team updates
 
 Contact:
-* (Twitter)[https://twitter.com/3_stan]
+* [Twitter](https://twitter.com/3_stan)
 
 ---
 
