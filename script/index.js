@@ -6,11 +6,13 @@ class BuildingHelper {
   constructor(self) {
     this.buildings = {}
     this.items = {}
+    this.prettyNameMap = {}
 
     this.demanded = {}
     this.demandedListDiv = $("#demand-list")
 
     this.requiredRawResources = {}
+    this.requiredListDiv = $("#required-list")
   }
 
   prettifyName(input) {
@@ -24,6 +26,7 @@ class BuildingHelper {
         "id": value,
         "name": helper.prettifyName(value)
       })
+      helper.prettyNameMap[value] = helper.prettifyName(value)
     })
     return answer
   }
@@ -37,7 +40,7 @@ class BuildingHelper {
       })
       $.getJSON('https://raw.githubusercontent.com/3stan/roihelper/master/resources/items.json', function(data) {
         $(data).each(function(name, value) {
-          helper.items[value.name] = value.req
+          helper.items[value.id] = value.req
         })  
         var typeaheadInput = $("#item-field")
         typeaheadInput.typeahead({ 
@@ -48,6 +51,7 @@ class BuildingHelper {
           fitToElement:true,
           items:5,
           autoSelect:false,
+          highlight:true,
         })
       })
 
@@ -82,18 +86,89 @@ class BuildingHelper {
       helper.updateExistingDemandedItem(helper, item)
     }
 
-    helper.reduceToRaw(helper, item)
+    var newRawRequired = helper.reduceToRaw(helper, item)
+    helper.mergeNewRawRequired(helper, newRawRequired)
+    helper.updatePageWithNewRaw(helper)
+  }
+
+  isRawResource(helper, item) {
+    return helper.items[item.id].length == 0
   }
 
   reduceToRaw(helper, item) {
     var itemToAdd = item.id
     var rawRequired = {}
     var reducing = [{"id": itemToAdd, "quantity": 1}]
+    var ans = []
 
-    //while(reducing.length > 0) {
+    if (helper.isRawResource(helper, item)) {
+      return reducing
+    }
+
+    while(reducing.length > 0) {
       var curr = reducing.pop()
-      console.log(helper.items[curr.id])
-    //}
+      var requirements = helper.items[curr.id]
+      for (var i = 0; i < requirements.length; i++) { 
+        var requirement = requirements[i]
+        if (helper.isRawResource(helper, requirement)) {
+          if (rawRequired[requirement.id] == undefined) {
+            rawRequired[requirement.id] = requirement.quantity * curr["quantity"]
+          } else {
+            rawRequired[requirement.id] += requirement.quantity * curr["quantity"]
+          }
+        } else {
+          reducing.push({"id": requirement.id, "quantity": requirement.quantity * curr["quantity"]})
+        }
+      } 
+    }
+
+    for (var key in rawRequired) {
+      // check if the property/key is defined in the object itself, not in parent
+      if (rawRequired.hasOwnProperty(key)) {           
+        ans.push({
+          "id": key,
+          "quantity": rawRequired[key]
+        })
+      }
+    }
+    return ans
+  }
+
+  mergeNewRawRequired(helper, rawRequired) {
+    while (rawRequired.length > 0) {
+      var curr = rawRequired.pop()
+      if (helper.requiredRawResources[curr.id] == undefined) {
+        helper.requiredRawResources[curr.id] = curr.quantity
+      } else {
+        helper.requiredRawResources[curr.id] += curr.quantity
+      }
+    }
+  }
+
+  addNewRequiredItem(helper, itemName, itemAmount) {
+    helper.requiredListDiv.append(
+      $('<tr>').attr('id', 'required-' + itemName).append(
+        [
+          $('<td>').attr('class', 'required-name').append(helper.prettyNameMap[itemName]),
+          $('<td>').attr('class', 'required-quantity').append(itemAmount)
+        ]
+    ));  
+  }
+
+  updateExistingRequiredItem(helper, itemName, itemAmount) {
+    $("#required-" + itemName).find(".required-quantity").html(itemAmount)
+  }
+
+  updatePageWithNewRaw(helper) {
+    for (var key in helper.requiredRawResources) {
+      if (helper.requiredRawResources.hasOwnProperty(key)) {
+        if ($("#required-" + key).length == 0) {
+          helper.addNewRequiredItem(helper, key, helper.requiredRawResources[key])
+        } else {
+          helper.updateExistingRequiredItem(helper, key, helper.requiredRawResources[key])
+        }
+      }
+    }
   }
 }
 
