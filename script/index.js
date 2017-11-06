@@ -22,11 +22,9 @@ class BuildingHelper {
   getNames(helper) {
     var answer = []
     $(Object.keys(helper.items)).each(function(name, value) {
-      answer.push({
-        "id": value,
-        "name": helper.prettifyName(value)
-      })
+      answer.push(helper.prettifyName(value))
       helper.prettyNameMap[value] = helper.prettifyName(value)
+      helper.prettyNameMap[helper.prettifyName(value)] = value
     })
     return answer
   }
@@ -42,17 +40,26 @@ class BuildingHelper {
         $(data).each(function(name, value) {
           helper.items[value.id] = value.req
         })  
+        var suggestionEngine = new Bloodhound({
+          datumTokenizer: Bloodhound.tokenizers.whitespace,
+          queryTokenizer: Bloodhound.tokenizers.whitespace,
+          // `states` is an array of state names defined in "The Basics"
+          local: helper.getNames(helper)
+        });
         var typeaheadInput = $("#item-field")
         typeaheadInput.typeahead({ 
-          source: helper.getNames(helper),
-          updater: function(item) {
-            helper.onDemandedItemAdd(helper, item)
-          },
           fitToElement:true,
-          items:5,
-          autoSelect:false,
           highlight:true,
+          hint:false,
+        },
+        {
+          name:'items',
+          source:suggestionEngine
         })
+        typeaheadInput.bind('typeahead:select', function(ev, suggestion) {
+          helper.onDemandedItemAdd(helper, {"id": helper.prettyNameMap[suggestion], "name": suggestion})
+          $('#item-field').typeahead('val', '');
+        });
       })
 
       if (true) {
