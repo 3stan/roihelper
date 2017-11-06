@@ -390,7 +390,7 @@
     "req":[
       {
         "id":"cocoa",
-        "quantity":2
+        "quantity":1
       },
       {
         "id":"milk",
@@ -510,7 +510,7 @@
     "req":[
       {
         "id":"apples",
-        "quantity":1
+        "quantity":2
       },
       {
         "id":"sugar",
@@ -523,7 +523,7 @@
     "req":[
       {
         "id":"oranges",
-        "quantity":1
+        "quantity":2
       },
       {
         "id":"sugar",
