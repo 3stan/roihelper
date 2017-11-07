@@ -30,6 +30,22 @@ ItemHelperModel.prototype = {
     return this._requiredRawResources
   },
 
+  getSankeyName: function(itemId) {
+    if (itemId.includes("Unprocessed") || this._items[itemId].isRawResource()) {
+      return itemId
+    } else {
+      var ans = itemId + " ("
+      var reqStrings = []
+      var reqs = this._items[itemId].requirements
+      for (var index in reqs) {
+        reqStrings.push(reqs[index].id + ": " + reqs[index].quantity)
+      }
+      
+      ans += (reqStrings.join(", ") + ")")
+      return ans
+    }
+  },
+
   getSankeyData: function () {
     var ans = []
     for (var originKey in this._sankeyData) {
@@ -37,7 +53,9 @@ ItemHelperModel.prototype = {
         var destinations = this._sankeyData[originKey]
         for (var destinationKey in destinations) {
           if (destinations.hasOwnProperty(destinationKey)) {
-            ans.push([originKey, destinationKey, destinations[destinationKey]])
+            var newOriginName = this.getSankeyName(originKey)
+            var newDestinationName = this.getSankeyName(destinationKey)
+            ans.push([newOriginName, newDestinationName, destinations[destinationKey]])
           }
         }
       }

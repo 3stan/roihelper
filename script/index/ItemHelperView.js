@@ -3,8 +3,17 @@ function ItemHelperView(model) {
 
   this.demandedListDiv = $("#demand-list")
   this.requiredListDiv = $("#required-list")
+ 
   this.sankeyDiv = $("#sankey-chart")
   this.sankeyChart = new google.visualization.Sankey(this.sankeyDiv.get(0));
+  this.sankeyOptions = {
+    sankey: {
+      node: {
+        interactivity: true, // Allows you to select nodes.
+      }
+    }  
+  }
+
   this.typeaheadInput = $("#item-field")
 
   this.demandItemAdded = new Event(this)
@@ -103,7 +112,7 @@ ItemHelperView.prototype = {
     data.addColumn('string', 'To')
     data.addColumn('number', 'Quantity')
     data.addRows(sankeyData)
-    this.sankeyChart.draw(data);    
+    this.sankeyChart.draw(data, this.sankeyOptions);    
   }
 }
 

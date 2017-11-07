@@ -41,7 +41,7 @@
 <body>
 
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">RoI Helper (Alpha)</a>
+    <a class="navbar-brand" href="#">RoI Helper (Alpha 0.2)</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -74,8 +74,13 @@
     </div>
     <div id="instructions">
       <p class="h1">Instructions:</p>
-      <p>Search and select items that your towns are demanding. This page will then figure out how many raw resources you need
-        to maintain output.</p>
+      <p>
+        Search and select items that your towns are demanding.<br />
+        This page will then figure out how many raw resources you need to maintain output.<br /> 
+        Additionally, this page will output a Sankey chart at the bottom, describing the flow of resources from raw material to final output.<br /> 
+        Click each node to highlight the paths.<br />
+        Any flow that ends with an "(Unprocessed)" item means you selected a raw material.
+      </p>
     </div>
     <div class="row">
       <input type="text" class="typeahead form-control" id="item-field" placeholder="Search for Item">

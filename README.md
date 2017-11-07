@@ -18,5 +18,8 @@ Contact:
 
 ## Updates
 
+### Alpha 0.2 (November 6th, 2017)
+* Added Sankey charts to the Raw Resource Planner to help plan out building placements
+
 ### Alpha 0.1 (November 5th, 2017)
 * Initial version of the Helper page
