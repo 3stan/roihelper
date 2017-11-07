@@ -1,5 +1,7 @@
-var setup =
-  new Promise((resolve, reject) => {
+var googleChartsSetup = google.charts.load('current', { 'packages': ['sankey'] })
+
+var setup = function(result) {
+  return new Promise((resolve, reject) => {
     $.getJSON('https://raw.githubusercontent.com/3stan/roihelper/master/resources/items.json', function (data) {
       var allItems = {}
       $(data).each(function (name, value) {
@@ -14,12 +16,16 @@ var setup =
       resolve("Set up complete")
     })
   })
+}
+  
 
 $(document).ready(function () {
-  setup.then(result => {
-    $("#title").text("Loaded!")
-    setTimeout(function () { $("#title-div").remove() }, 1000)
-  }, error => {
-    console.log(error)
-  })
+  googleChartsSetup
+    .then(setup)
+    .then(result => {
+      $("#title").text("Loaded!")
+      setTimeout(function () { $("#title-div").remove() }, 1000)
+    }, error => {
+      console.log(error)
+    })
 });

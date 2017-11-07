@@ -4,3 +4,6 @@ body {
 #title-div {
   text-align: center;
 }
+#sankey-chart{
+  min-height: 600px
+}

@@ -1,99 +1,118 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109246432-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-109246432-1');
-    </script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109246432-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    gtag('config', 'UA-109246432-1');
+  </script>
 
-    <title>Rise of Industry Helper</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <script src="script/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="script/typeahead.bundle.min.js"></script>
-    <script src="script/index/Event.js"></script>
-    <script src="script/index/ItemModel.js"></script>
-    <script src="script/index/ItemHelperModel.js"></script>
-    <script src="script/index/ItemHelperView.js"></script>
-    <script src="script/index/index.js"></script>
+  <title>Rise of Industry Helper</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="css/typeaheadjs.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
-  </head>
+  <script src="script/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="script/typeahead.bundle.min.js"></script>
+  <script src="script/index/Event.js"></script>
+  <script src="script/index/ItemModel.js"></script>
+  <script src="script/index/ItemHelperModel.js"></script>
+  <script src="script/index/ItemHelperView.js"></script>
+  <script src="script/index/index.js"></script>
 
-  <body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+  <link href="css/typeaheadjs.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+</head>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">RoI Helper (Alpha)</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<body>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Raw Resource Planner<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/3stan/roihelper">Source Code<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/3stan/roihelper/blob/master/README.md">About<span class="sr-only">(current)</span></a>
-          </li>
-        </ul>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">RoI Helper (Alpha)</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Raw Resource Planner
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/3stan/roihelper">Source Code
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/3stan/roihelper/blob/master/README.md">About
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main" class="container">
+    <div id="title-div">
+      <h1 id="title">Loading...</h1>
+    </div>
+    <div id="instructions">
+      <p class="h1">Instructions:</p>
+      <p>Search and select items that your towns are demanding. This page will then figure out how many raw resources you need
+        to maintain output.</p>
+    </div>
+    <div class="row">
+      <input type="text" class="typeahead form-control" id="item-field" placeholder="Search for Item">
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Demanded Item</th>
+              <th scope="col">Quantity</th>
+            </tr>
+          </thead>
+          <tbody id="demand-list">
+          </tbody>
+        </table>
       </div>
-    </nav>
+      <div class="col-sm">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Required Raw Resource</th>
+              <th scope="col">Quantity</th>
+            </tr>
+          </thead>
+          <tbody id="required-list">
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+      <div class="col-sm" id="sankey-chart"></div>
+    </div>
+    <!-- /.row -->
+  </main>
+  <!-- /.container -->
+</body>
 
-    <main role="main" class="container">
-      <div id="title-div">
-        <h1 id="title">Loading...</h1>
-      </div>
-      <div id="instructions">
-        <p class="h1">Instructions:</p>
-        <p>Search and select items that your towns are demanding. This page will then figure out how many raw resources you need to maintain output.</p>
-      </div>
-      <div class="row">
-        <input type="text" class="typeahead form-control" id="item-field" placeholder="Search for Item">
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Demanded Item</th>
-                <th scope="col">Quantity</th>
-              </tr>
-            </thead>
-            <tbody id="demand-list">
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Required Raw Resource</th>
-                <th scope="col">Quantity</th>
-              </tr>
-            </thead>
-            <tbody id="required-list">
-            </tbody>
-          </table>
-        </div>
-      </div><!-- /.row -->
-    </main><!-- /.container -->
-  </body>
 </html>
-

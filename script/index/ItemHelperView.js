@@ -3,6 +3,8 @@ function ItemHelperView(model) {
 
   this.demandedListDiv = $("#demand-list")
   this.requiredListDiv = $("#required-list")
+  this.sankeyDiv = $("#sankey-chart")
+  this.sankeyChart = new google.visualization.Sankey(this.sankeyDiv.get(0));
   this.typeaheadInput = $("#item-field")
 
   this.demandItemAdded = new Event(this)
@@ -12,11 +14,14 @@ function ItemHelperView(model) {
   this._model.demandedItemAdded.attach(function (args) {
     _this.rebuildDemandList(args)
     _this.rebuildRequiredList(args)
+    _this.rebuildSankeyDiagram()
     _this.resetInputs()
   })
   this._model.demandedItemRemoved.attach(function () {
     _this.rebuildDemandList()
     _this.rebuildRequiredList()
+    _this.rebuildSankeyDiagram()
+    _this.resetInputs()
   })
 
   var suggestionEngine = new Bloodhound({
@@ -88,6 +93,17 @@ ItemHelperView.prototype = {
         this.addNewRequiredItem(key, requiredItems[key])
       }
     }
+  },
+  
+  rebuildSankeyDiagram: function() {
+    this.sankeyChart.clearChart();
+    var sankeyData = this._model.getSankeyData()
+    var data = new google.visualization.DataTable()
+    data.addColumn('string', 'From')
+    data.addColumn('string', 'To')
+    data.addColumn('number', 'Quantity')
+    data.addRows(sankeyData)
+    this.sankeyChart.draw(data);    
   }
 }
 
